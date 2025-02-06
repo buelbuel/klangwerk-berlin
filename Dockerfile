@@ -34,7 +34,6 @@ RUN yarn run build
 
 # Remove development dependencies
 RUN yarn install --production=truefly
-RUN npx medusa db:setup --db medusa-klangwerk-berlin
 
 
 # Final stage for app image
