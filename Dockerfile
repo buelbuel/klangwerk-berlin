@@ -24,8 +24,6 @@ RUN apt-get update -qq && \
 COPY package-lock.json package.json ./
 RUN npm ci --include=dev
 
-# for alpine-based images
-RUN apk add ca-certificates fuse3 sqlite
 # or for debian/ubuntu-based images
 RUN apt-get update -y && apt-get install -y ca-certificates fuse3 sqlite3
 

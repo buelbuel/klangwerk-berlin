@@ -18,3 +18,7 @@ primary_region = 'fra'
 
 [[vm]]
   size = 'shared-cpu-1x'
+
+[mounts]
+  source = "litefs"
+  destination = "/var/lib/litefs"
